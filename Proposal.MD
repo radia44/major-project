@@ -2,18 +2,21 @@
 
 Function Graphing Calculator	
 
-Must have:
+Must Have:
 
-Linear functions
-Quadratic functions
-Trigonometric functions
-Polynomial functions
-Logarithmic and exponential functions
-Able to zoom and pan
+-Opening screen
+-Sidebar to input functions
+-Linear functions
+-Quadratic functions
+-Trigonometric functions
+-Polynomial functions
+-Logarithmic and exponential functions
+-Able to zoom and pan
 
-Would be nice to have:
+Would Be Nice to Have:
 
-Animation
-Multiple functions on screen at the same time
-Hover over any area of the function and show the coordinates
+-Animation
+-Multiple functions on screen at the same time
+-Hover over any area of the function and show the coordinates
+-Save functions
               
