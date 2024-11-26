@@ -5,7 +5,7 @@
 ## Must Have:
 
 - Opening screen
-- Explanation of every function on the opening screen
+- Explanation of every function, button on the opening screen
 - Sidebar to input functions
 - Linear functions
 - Quadratic functions
