@@ -5,6 +5,7 @@
 ## Must Have:
 
 - Opening screen
+- Explanation of every function on the opening screen
 - Sidebar to input functions
 - Linear functions
 - Quadratic functions
@@ -15,7 +16,8 @@
 
 ## Would Be Nice to Have:
 
-- Animation
+- Animate functions
+- Animate the explanations of the functions
 - Multiple functions on screen at the same time
 - Hover over any area of the function and show the coordinates
 - Save functions
