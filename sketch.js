@@ -5,6 +5,10 @@
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
 
+let openingScreen = true;
+let graphingScreen = false;
+let tutorial = false;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -12,8 +16,6 @@ function setup() {
 
 function draw() {
   background(220);
-
-  circle(mouseX, mouseY, 100);
 }
 
 function displayGrid() {
