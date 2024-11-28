@@ -9,7 +9,6 @@ let openingScreen = true;
 let graphingScreen = false;
 let tutorial = false;
 
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
@@ -24,4 +23,8 @@ function displayGrid() {
       square(x * cellSize, y * cellSize, cellSize);
     }
   }
+}
+
+function displayGraphingScreen() {
+
 }
