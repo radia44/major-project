@@ -5,16 +5,17 @@
 // Extra for Experts:
 // - describe what you did to take this project "above and beyond"
 
-let openingScreen = true;
-let graphingScreen = false;
-let tutorial = false;
+let state = "start";
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background(220);
+  background(0);
+  if (state === "start"){
+    displayStartScreen();
+  }
 }
 
 function displayGrid() {
@@ -25,6 +26,17 @@ function displayGrid() {
   }
 }
 
-function displayGraphingScreen() {
+function displayStartScreen(){
+  textAlign(CENTER, CENTER);
+  textSize(24);
+  fill("white");
+  text("Function Graphing Calculator", width / 2, height / 2 - 40);
+  textSize(16);
+}
 
+function displayGraphingScreen() {
+}
+
+function displaySideBar() {
+  
 }
