@@ -16,9 +16,14 @@ function draw() {
   if (state === "start"){
     displayStartScreen();
   }
+  button = createButton("graph");
+  button.size(50, 20);
+  button.position(width/2, height/2 + 100);
+  button.style("font-size", "12px");
 }
 
 function displayGrid() {
+  let cellSize = 5;
   for (let y = 0; y < GRID_SIZE; y++) {
     for (let x = 0; x < GRID_SIZE; x++) {
       square(x * cellSize, y * cellSize, cellSize);
@@ -32,11 +37,4 @@ function displayStartScreen(){
   fill("white");
   text("Function Graphing Calculator", width / 2, height / 2 - 40);
   textSize(16);
-}
-
-function displayGraphingScreen() {
-}
-
-function displaySideBar() {
-  
 }
