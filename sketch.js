@@ -24,7 +24,7 @@ function drawStartScreen() {
   textSize(30);
   text("Function Graphing Calculator", width/2, height/2 - 100);
   textSize(18);
-  text("Options", width/2, height/2 - 50)
+  text("Options", width/2, height/2 - 50);
 }
 
 function drawGraphingButton() {
@@ -38,5 +38,6 @@ function drawGraphingButton() {
 }
 
 function drawGraphingScreen() {
-  
+  let animationProgress = 0;
+  let animationSpeed = 5;
 }
