@@ -6,20 +6,26 @@
 // - describe what you did to take this project "above and beyond"
 
 let state = "start";
+let graphingButton;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background(0);
-  if (state === "start"){
+  if (state === "start") {
     drawStartScreen();
     drawGraphingButton();
+    graphingButton.mouseClicked(stateNowGraphing);
+  }
+  if (state === "graphing"){
+    drawGraphingScreen();
   }
 }
 
 function drawStartScreen() {
+  background(0);
+  textAlign(CENTER, CENTER);
   fill("white");
   textSize(30);
   text("Function Graphing Calculator", width/2, height/2 - 100);
@@ -28,16 +34,22 @@ function drawStartScreen() {
 }
 
 function drawGraphingButton() {
-  fill("blue");
-  rectMode(CENTER);
-  rect(width/2, height/2, 120, 40);
-  fill("white");
-  textSize(16);
-  textAlign(CENTER, CENTER);
-  text("Start Graphing", width/2, height/2);
+  graphingButton = createButton("Graphing");
+  graphingButton.size(120, 40);
+  graphingButton.position(width/2, height/2);
+  graphingButton.style("font-family", "sans-serif");
+  graphingButton.style("font-size", "12px");
+  graphingButton.color("blue");
+}
+
+function stateNowGraphing() {
+  state = "graphing";
 }
 
 function drawGraphingScreen() {
-  let animationProgress = 0;
-  let animationSpeed = 5;
+  background(255);
+
+  stroke("black");
+  line(width/2, 0, width/2, height);
+  line(0, height/2, width, height/2);
 }
