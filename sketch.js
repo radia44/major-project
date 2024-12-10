@@ -7,6 +7,7 @@
 
 let state = "start";
 let graphingButton;
+functionOptions = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -79,4 +80,9 @@ function drawSidebar() {
   // Add input
   input = createInput('');
   input.position(20, 50); 
+}
+
+
+function drawFunctionOptionButtons() {
+
 }
