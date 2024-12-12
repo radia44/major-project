@@ -7,6 +7,7 @@
 
 let state = "start";
 let graphingButton;
+let input;
 functionOptions = [];
 
 function setup() {
@@ -78,11 +79,10 @@ function drawSidebar() {
   text("Function Input", 20, 20); 
 
   // Add input
-  input = createInput('');
+  input = createInput();
   input.position(20, 50); 
 }
 
-
 function drawFunctionOptionButtons() {
-
+  
 }
