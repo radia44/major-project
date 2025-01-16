@@ -12,7 +12,7 @@ functionOptions = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  createStartScreen(); // Draw startscreen
+  createStartScreen(); // Draw start screen
 }
 
 function draw() {
@@ -26,10 +26,10 @@ function draw() {
 }
 
 function createStartScreen() {
-  //Draw "Graphing" button
+  // Draw "Graphing" button
   graphingButton = createButton("Graphing");
   graphingButton.size(120, 40);
-  graphingButton.position(width / 2 - 60, height / 2 - 20); 
+  graphingButton.position(width / 2 - 60, height / 2 - 20);
   graphingButton.style("font-family", "sans-serif");
   graphingButton.style("font-size", "16px");
   graphingButton.style("background-color", "blue");
@@ -52,6 +52,13 @@ function drawStartScreen() {
 function stateNowGraphing() {
   state = "graphing";
   graphingButton.hide(); // Hide the button when state is graphing
+  createGraphingUI(); // Set up graphing UI
+}
+
+function createGraphingUI() {
+  // Create the input field for the sidebar
+  input = createInput();
+  input.position(20, 50); // Place it inside the sidebar area
 }
 
 function drawGraphingScreen() {
@@ -76,13 +83,5 @@ function drawSidebar() {
   textSize(16);
   textAlign(LEFT, TOP);
   textStyle("bold");
-  text("Function Input", 20, 20); 
-
-  // Add input
-  input = createInput();
-  input.position(20, 50); 
-}
-
-function drawFunctionOptionButtons() {
-  
+  text("Function Input", 20, 20);
 }
