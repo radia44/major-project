@@ -5,6 +5,7 @@ let offsetX = 0;
 let offsetY = 0;
 let graphing = false;
 let startScreen = true;
+let isDragging = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
