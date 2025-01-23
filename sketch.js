@@ -61,7 +61,6 @@ function drawStartScreen() {
   textSize(20);
   text("Start Graphing", width / 2, height * 2 / 3);
   
-  
   // "Tutorial" Button
   fill(150, 100, 255);
   rect(width / 2, height * 2 / 3 + 80, 200, 50, 10);
@@ -191,7 +190,7 @@ function drawGrid() {
   stroke(220);
   strokeWeight(1);
 
-  let step = 20; // Grid spacing in pixels
+  let step = 10 * zoom; // Reduce grid step based on zoom level for proportionate size
 
   for (let x = -width; x < width; x += step) {
     line(x, -height, x, height); // Vertical grid lines
