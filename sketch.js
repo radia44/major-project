@@ -1,9 +1,9 @@
-// Project Title
-// Your Name
-// Date
+// Function Graphing Calculator
+// Radia Jannat
+// January 1, 2025
 //
-// Extra for Experts:
-// - describe what you did to take this project "above and beyond"
+// Using vectors to smooth lines
+// Made use of math.js
 
 let offsetX = 0, offsetY = 0; // Offset for panning
 let zoom = 1; // Zoom level
